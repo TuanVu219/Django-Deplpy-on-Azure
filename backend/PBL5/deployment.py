@@ -11,7 +11,7 @@ DEBUG = False
 SECRET_KEY = os.environ['SECRET']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise middleware
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # Better positioning for CORS
     'django.middleware.common.CommonMiddleware',
