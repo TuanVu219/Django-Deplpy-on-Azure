@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = int(os.environ.get("DEBUG", default=0))
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1 localhost").split(" ")
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1 localhost azuredjangotutorial-b6ajcnhzapgwg5e6.southeastasia-01.azurewebsites.net").split(" ")
 
 # Application definition
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') if not DEBUG else ''
