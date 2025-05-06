@@ -8,7 +8,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://' + os.environ['WEBSITE_HOSTNAME'],
 ]
 DEBUG = False
-
+SECRET_KEY = os.environ['SECRET']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise middleware
