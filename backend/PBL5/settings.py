@@ -51,6 +51,7 @@ CELERY_TIMEZONE = 'Asia/Ho_Chi_Minh'
 broker_connection_retry_on_startup = True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -68,6 +69,8 @@ CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 CORS_ALLOWED_ORIGINS = [
     'http://example.com',
     'http://172.20.10.4:8000',
+    'https://azuredjangotutorial-b6ajcnhzapgwg5e6.southeastasia-01.azurewebsites.net',
+
 ]
 CORS_ALLOW_METHODS = [
     'GET',
