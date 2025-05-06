@@ -39,21 +39,7 @@ DATABASES = {
     }
 }
 
-# wsgi.py
-"""
-WSGI config for PBL5 project.
-It exposes the WSGI callable as a module-level variable named ``application``.
-For more information on this file, see
-https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
-"""
-import os
-from django.core.wsgi import get_wsgi_application
 
-# Correct the settings module selection
-setting_module = 'PBL5.deployment' if 'WEBSITE_HOSTNAME' in os.environ else 'PBL5.settings'
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', setting_module)
-
-application = get_wsgi_application()
 
 # .production
 # [config]
