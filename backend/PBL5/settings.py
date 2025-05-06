@@ -51,7 +51,7 @@ CELERY_TIMEZONE = 'Asia/Ho_Chi_Minh'
 broker_connection_retry_on_startup = True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
