@@ -18,7 +18,7 @@ DEBUG = int(os.environ.get("DEBUG", default=0))
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1 localhost azuredjangotutorial-b6ajcnhzapgwg5e6.southeastasia-01.azurewebsites.net").split(" ")
 
 # Application definition
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') if not DEBUG else ''
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') if not DEBUG else os.path.join(BASE_DIR, 'static')
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
